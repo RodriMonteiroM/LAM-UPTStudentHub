@@ -21,7 +21,7 @@
 
         <!-- singleTop: a seta Up reutiliza esta MainActivity, por isso o nome escrito não se perde (FR11) -->
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="true"
             android:launchMode="singleTop">
             <intent-filter>
@@ -32,17 +32,17 @@
 
         <!-- parentActivityName ativa a seta Up para a MainActivity -->
         <activity
-            android:name=".TimetableActivity"
+            android:name=".activities.TimetableActivity"
             android:exported="false"
             android:label="@string/timetable_label"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".activities.MainActivity" />
 
         <!-- Semana 7: ecrã da meteorologia, também filho da MainActivity (seta Up) -->
         <activity
-            android:name=".WeatherActivity"
+            android:name=".activities.WeatherActivity"
             android:exported="false"
             android:label="@string/weather_label"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".activities.MainActivity" />
     </application>
 
 </manifest>

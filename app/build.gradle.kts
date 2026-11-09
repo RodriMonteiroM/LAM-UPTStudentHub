@@ -9,9 +9,9 @@ android {
     }
 
     defaultConfig {
-        applicationId = "pt.upt.studenthub"
+        applicationId = "pt.upt.studenthub.a51856"
         minSdk = 24
-        // 34 evita o modo "edge-to-edge" obrigatório do Android 15+ (conteúdo por baixo das barras)
+        // 34 evita o modo "edge-to-edge" obrigatÃ³rio do Android 15+ (conteÃºdo por baixo das barras)
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -37,7 +37,7 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.material)
 
-    // Step 1 — ViewModel e LiveData (Week 6)
+    // Step 1 â€” ViewModel e LiveData (Week 6)
     implementation("androidx.lifecycle:lifecycle-viewmodel:2.8.7")
     implementation("androidx.lifecycle:lifecycle-livedata:2.8.7")
 
