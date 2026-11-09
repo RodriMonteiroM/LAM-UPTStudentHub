@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Passo 2: o mesmo pai no modo escuro, para a barra de ação continuar visível -->
+    <style name="Base.Theme.UPTStudentHub" parent="Theme.Material3.DayNight">
+        <!-- Personalizar aqui o tema escuro. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+</resources>

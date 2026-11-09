@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_l">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_l"
+        android:text="@string/welcome_title"
+        android:textAppearance="?attr/textAppearanceHeadlineSmall" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="name"
+        android:hint="@string/hint_student_name"
+        android:inputType="textPersonName|textCapWords"
+        android:minHeight="@dimen/touch_target" />
+
+    <!-- Os dois botões de entrada ficam lado a lado, cada um com metade da largura -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_m"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnOpenTimetable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_s"
+            android:layout_weight="1"
+            android:minHeight="@dimen/touch_target"
+            android:text="@string/btn_open_timetable" />
+
+        <!-- Semana 7: abre o ecrã que usa a rede -->
+        <Button
+            android:id="@+id/btnOpenWeather"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="@dimen/touch_target"
+            android:text="@string/btn_open_weather" />
+    </LinearLayout>
+</LinearLayout>

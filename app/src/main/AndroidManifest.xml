@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Semana 7: acesso à Internet (permissão normal, dada automaticamente na instalação) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Semana 7: necessária para consultar o estado da rede (ConnectivityManager) -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Sem usesCleartextTraffic: só usamos https, por isso não é preciso nenhuma exceção -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UPTStudentHub"
+        tools:targetApi="31">
+
+        <!-- singleTop: a seta Up reutiliza esta MainActivity, por isso o nome escrito não se perde (FR11) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- parentActivityName ativa a seta Up para a MainActivity -->
+        <activity
+            android:name=".TimetableActivity"
+            android:exported="false"
+            android:label="@string/timetable_label"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Semana 7: ecrã da meteorologia, também filho da MainActivity (seta Up) -->
+        <activity
+            android:name=".WeatherActivity"
+            android:exported="false"
+            android:label="@string/weather_label"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>

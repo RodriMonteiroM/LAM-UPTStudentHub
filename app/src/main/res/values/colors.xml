@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Semana 7: cores do ecrã da meteorologia -->
+    <color name="upt_blue_dark">#FF0B2E59</color>
+    <color name="upt_card_bg">#FFE3EEFA</color>
+    <color name="offline_red">#FFB3261E</color>
+</resources>

@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Passo 2: tema COM barra de ação (sem ela o Options Menu não aparece) -->
+    <style name="Base.Theme.UPTStudentHub" parent="Theme.Material3.DayNight">
+        <!-- Personalizar aqui o tema claro. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.UPTStudentHub" parent="Base.Theme.UPTStudentHub" />
+</resources>
