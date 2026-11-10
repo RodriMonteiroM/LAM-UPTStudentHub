@@ -1,0 +1,61 @@
+<resources>
+    <string name="ex_title">Explorer · Mar e praias</string>
+    <string name="ex_detail_title">Detalhe da previsão</string>
+    <string name="ex_settings_title">Definições do Explorer</string>
+    <string name="ex_compare_title">Comparar praias</string>
+    <string name="ex_greeting">Olá, %1$s! Explora o mar e as praias.</string>
+    <string name="beach_matosinhos">Matosinhos</string>
+    <string name="beach_povoa">Póvoa de Varzim</string>
+    <string name="beach_nazare">Nazaré</string>
+    <string name="ex_idle">Pronto para carregar.</string>
+    <string name="ex_loading">A carregar…</string>
+    <string name="ex_success">Previsão atualizada. Dados: Open-Meteo.</string>
+    <string name="ex_empty">Sem resultados para este local.</string>
+    <string name="ex_cancelled">Pedido cancelado. Os dados anteriores foram mantidos.</string>
+    <string name="ex_no_connection">Sem ligação à Internet. Verifica a rede e tenta novamente.</string>
+    <string name="ex_timeout">Tempo de espera esgotado. Tenta novamente.</string>
+    <string name="ex_http">Erro HTTP %1$d. Tenta novamente mais tarde.</string>
+    <string name="ex_invalid">O serviço devolveu dados inválidos.</string>
+    <string name="ex_offline">Sem rede</string>
+    <string name="ex_battery">Bateria fraca: atualização automática suspensa.</string>
+    <string name="ex_cancel">Cancelar</string>
+    <string name="ex_refresh">Atualizar</string>
+    <string name="ex_places">Escolher praia</string>
+    <string name="ex_compare">Comparar</string>
+    <string name="ex_settings">Definições</string>
+    <string name="ex_about">Acerca de</string>
+    <string name="ex_select">Seleciona uma hora na lista para veres o detalhe.</string>
+    <string name="ex_favorite">Marcar favorito</string>
+    <string name="ex_unfavorite">Desmarcar favorito</string>
+    <string name="ex_confirm_remove">Queres remover este favorito?</string>
+    <string name="ex_yes">Remover</string>
+    <string name="ex_no">Cancelar</string>
+    <string name="ex_added">Favorito adicionado.</string>
+    <string name="ex_removed">Favorito removido.</string>
+    <string name="ex_favorite_cd">Favorito</string>
+    <string name="ex_missing">—</string>
+    <string name="ex_marine">%1$s\n%2$s\n\nOnda: %3$s m\nPeríodo: %4$s s\nDireção: %5$s\nÁgua: %6$s °C</string>
+    <string name="ex_air">Ar: %1$s °C\nVento: %2$s km/h\nDireção do vento: %3$s</string>
+    <string name="ex_row_wave">Onda: %1$s m · Período: %2$s s</string>
+    <string name="ex_row_water">Direção: %1$s · Água: %2$s °C</string>
+    <string name="ex_surf">Onda acima do limiar definido para surf</string>
+    <string name="ex_wave">Onda abaixo do limiar ou sem medição</string>
+    <string name="ex_threshold">Limiar de onda (0,5 a 5,0 metros)</string>
+    <string name="ex_refresh_seconds">Atualização automática (30 a 3600 segundos)</string>
+    <string name="ex_step">Intervalo entre linhas</string>
+    <string name="ex_step_one">1 hora</string>
+    <string name="ex_step_three">3 horas</string>
+    <string name="ex_two_days">Mostrar dois dias (desmarcado: um dia)</string>
+    <string name="ex_save">Guardar definições</string>
+    <string name="ex_threshold_error">Introduz um número entre 0,5 e 5,0.</string>
+    <string name="ex_refresh_error">Introduz um inteiro entre 30 e 3600.</string>
+    <string name="ex_settings_saved">Definições aplicadas.</string>
+    <string name="ex_retry">Tentar novamente</string>
+    <string name="ex_compare_status">%1$s\n\n%2$s</string>
+    <string name="ex_notice">Previsão informativa. Não substitui avisos oficiais nem garante condições seguras para surf.</string>
+    <string name="ex_direction">%1$s (%2$s°)</string>
+    <string-array name="ex_cardinal_points">
+        <item>N</item><item>NE</item><item>E</item><item>SE</item>
+        <item>S</item><item>SO</item><item>O</item><item>NO</item>
+    </string-array>
+</resources>
