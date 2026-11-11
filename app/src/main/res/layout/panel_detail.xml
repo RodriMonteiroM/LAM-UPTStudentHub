@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/spacing_m">
+        <TextView android:id="@+id/detailText" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_weather_card" android:padding="@dimen/spacing_m" android:text="@string/ex_select" android:textSize="@dimen/ex_body" android:accessibilityLiveRegion="polite" android:textColor="@color/upt_text" android:lineSpacingExtra="2dp" />
+        <Button android:id="@+id/btnFavorite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/touch_target" android:text="@string/ex_favorite" />
+        <Button android:id="@+id/btnRetryDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/touch_target" android:text="@string/ex_retry" style="@style/Hub.Button.Text" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ex_notice" android:textSize="@dimen/ex_small" android:layout_marginTop="@dimen/spacing_m" android:textColor="@color/upt_text_secondary" />
+    </LinearLayout>
+</ScrollView>
