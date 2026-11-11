@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/spacing_m">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ex_threshold" android:labelFor="@id/settingThreshold" />
+        <EditText android:id="@+id/settingThreshold" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:minHeight="@dimen/touch_target" android:importantForAutofill="no" android:layout_marginBottom="@dimen/spacing_m" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ex_step" />
+        <RadioGroup android:id="@+id/settingStep" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="@dimen/spacing_m">
+            <RadioButton android:id="@+id/stepOne" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ex_step_one" android:minHeight="@dimen/touch_target" />
+            <RadioButton android:id="@+id/stepThree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ex_step_three" android:minHeight="@dimen/touch_target" />
+        </RadioGroup>
+        <CheckBox android:id="@+id/settingDays" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ex_two_days" android:minHeight="@dimen/touch_target" android:layout_marginBottom="@dimen/spacing_m" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ex_refresh_seconds" android:labelFor="@id/settingRefresh" />
+        <EditText android:id="@+id/settingRefresh" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:minHeight="@dimen/touch_target" android:importantForAutofill="no" android:layout_marginBottom="@dimen/spacing_m" />
+        <Button android:id="@+id/btnSaveSettings" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ex_save" android:minHeight="@dimen/touch_target" />
+    </LinearLayout>
+</ScrollView>
