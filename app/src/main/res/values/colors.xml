@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-
-    <!-- Semana 7: cores do ecrã da meteorologia -->
-    <color name="upt_blue_dark">#FF0B2E59</color>
-    <color name="upt_card_bg">#FFE3EEFA</color>
-    <color name="offline_red">#FFB3261E</color>
+    <!-- Paleta sóbria: azul escuro, papel cinzento e apontamentos verdes. -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="upt_primary">#455A64</color>
+    <color name="upt_secondary">#426B64</color>
+    <color name="upt_background">#F4F5F5</color>
+    <color name="upt_surface">#FFFFFF</color>
+    <color name="upt_text">#242B30</color>
+    <color name="upt_text_secondary">#58636B</color>
+    <color name="upt_border">#CDD3D6</color>
+    <color name="upt_blue_dark">#455A64</color>
+    <color name="upt_card_bg">#FFFFFF</color>
+    <color name="offline_red">#9C3535</color>
+    <color name="ex_sea">#376880</color>
+    <color name="ex_surf_color">#426B64</color>
+    <color name="ex_star">#916A25</color>
+    <color name="upt_toolbar">#455A64</color>
 </resources>

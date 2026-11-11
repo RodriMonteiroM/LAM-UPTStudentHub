@@ -1,0 +1,14 @@
+<resources>
+    <color name="upt_primary">#A5C4DA</color>
+    <color name="upt_secondary">#9FC8BC</color>
+    <color name="upt_background">#191E22</color>
+    <color name="upt_surface">#232A2F</color>
+    <color name="upt_text">#E1E7EA</color>
+    <color name="upt_text_secondary">#AFBBC2</color>
+    <color name="upt_border">#48545D</color>
+    <color name="upt_blue_dark">#BDD3E1</color>
+    <color name="upt_card_bg">#232A2F</color>
+    <color name="ex_sea">#99BDCF</color>
+    <color name="ex_surf_color">#9FC8BC</color>
+    <color name="ex_star">#D8B774</color>
+</resources>
