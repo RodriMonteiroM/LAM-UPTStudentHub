@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         // MÃ³dulo 1: horÃ¡rio | MÃ³dulo 2: meteorologia do campus
         btnOpenTimetable.setOnClickListener(v -> openScreen(TimetableActivity.class));
         btnOpenWeather.setOnClickListener(v -> openScreen(WeatherActivity.class));
+        findViewById(R.id.btnOpenExplorer).setOnClickListener(v -> openScreen(ExplorerActivity.class));
     }
 
     /**

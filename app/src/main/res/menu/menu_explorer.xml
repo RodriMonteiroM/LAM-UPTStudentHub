@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/exRefresh" android:title="@string/ex_refresh"/>
+    <item android:id="@+id/exPlaces" android:title="@string/ex_places">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/exMatosinhos" android:title="@string/beach_matosinhos"/>
+                <item android:id="@+id/exPovoa" android:title="@string/beach_povoa"/>
+                <item android:id="@+id/exNazare" android:title="@string/beach_nazare"/>
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/exCompare" android:title="@string/ex_compare"/>
+    <item android:id="@+id/exSettings" android:title="@string/ex_settings"/>
+    <item android:id="@+id/exAbout" android:title="@string/ex_about"/>
+</menu>

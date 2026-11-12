@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false" android:orientation="horizontal" android:padding="@dimen/spacing_s">
+    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical">
+        <TextView android:id="@+id/exGreeting" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="@dimen/ex_title_size" android:layout_marginBottom="@dimen/spacing_s" android:textColor="@color/upt_text" />
+        <TextView android:id="@+id/exOffline" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ex_offline" android:background="@color/offline_red" android:textColor="@color/white" android:padding="@dimen/spacing_s" android:visibility="gone" />
+        <TextView android:id="@+id/exBattery" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ex_battery" android:visibility="gone" />
+        <TextView android:id="@+id/exStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ex_idle" android:accessibilityLiveRegion="polite" android:layout_marginBottom="@dimen/spacing_s" android:textColor="@color/upt_text_secondary" />
+        <ProgressBar android:id="@+id/exProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/ex_loading" android:visibility="gone" />
+        <Button android:id="@+id/exCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/touch_target" android:text="@string/ex_cancel" style="@style/Hub.Button.Text" />
+        <ListView android:id="@+id/exList" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layoutAnimation="@anim/list_enter" android:saveEnabled="true" android:divider="@color/upt_border" android:dividerHeight="@dimen/hub_border" />
+    </LinearLayout>
+    <include layout="@layout/panel_detail" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" />
+</LinearLayout>
