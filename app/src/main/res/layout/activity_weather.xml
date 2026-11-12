@@ -1,120 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical">
-
-    <!-- Aviso de "sem rede": começa escondido, é o NetworkCallback que o mostra -->
-    <TextView
-        android:id="@+id/tvOffline"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/offline_red"
-        android:gravity="center"
-        android:minHeight="@dimen/touch_target"
-        android:text="@string/banner_offline"
-        android:textColor="@color/white"
-        android:visibility="gone" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="@dimen/spacing_m">
-
-        <TextView
-            android:id="@+id/tvGreeting"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceTitleLarge" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/weather_location" />
-
-        <!-- Cartão com os dados: gone até chegar a primeira resposta válida -->
-        <LinearLayout
-            android:id="@+id/weatherCard"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_m"
-            android:background="@drawable/bg_weather_card"
-            android:gravity="center_horizontal"
-            android:orientation="vertical"
-            android:padding="@dimen/spacing_m"
-            android:visibility="gone">
-
-            <TextView
-                android:id="@+id/tvTemperature"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?attr/textAppearanceDisplaySmall"
-                android:textColor="@color/upt_blue_dark" />
-
-            <TextView
-                android:id="@+id/tvDescription"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?attr/textAppearanceTitleMedium"
-                android:textColor="@color/upt_blue_dark" />
-
-            <TextView
-                android:id="@+id/tvHumidity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_s"
-                android:textColor="@color/upt_blue_dark" />
-
-            <TextView
-                android:id="@+id/tvWind"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/upt_blue_dark" />
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fitsSystemWindows="true" android:orientation="vertical">
+    <TextView android:id="@+id/tvOffline" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/offline_red" android:gravity="center" android:minHeight="@dimen/touch_target" android:text="@string/banner_offline" android:textColor="@color/white" android:visibility="gone" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="@dimen/spacing_m">
+        <TextView android:id="@+id/tvGreeting" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="?attr/textAppearanceTitleLarge" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/weather_location" />
+        <LinearLayout android:id="@+id/weatherCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_m" android:background="@drawable/bg_weather_card" android:gravity="start" android:orientation="vertical" android:padding="@dimen/spacing_m" android:visibility="gone">
+            <TextView android:id="@+id/tvTemperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/upt_blue_dark" android:textSize="@dimen/hub_temperature" />
+            <TextView android:id="@+id/tvDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?attr/textAppearanceTitleMedium" android:textColor="@color/upt_blue_dark" />
+            <TextView android:id="@+id/tvHumidity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_s" android:textColor="@color/upt_blue_dark" />
+            <TextView android:id="@+id/tvWind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/upt_blue_dark" />
         </LinearLayout>
-
-        <!-- Spinner e texto de estado na mesma linha -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_m"
-            android:gravity="center_vertical"
-            android:minHeight="@dimen/touch_target"
-            android:orientation="horizontal">
-
-            <!-- Indeterminado: não sabemos quanto tempo o servidor vai demorar -->
-            <ProgressBar
-                android:id="@+id/progressLoading"
-                android:layout_width="@dimen/touch_target"
-                android:layout_height="@dimen/touch_target"
-                android:layout_marginEnd="@dimen/spacing_s"
-                android:contentDescription="@string/cd_weather_progress"
-                android:indeterminate="true"
-                android:visibility="gone" />
-
-            <TextView
-                android:id="@+id/tvWeatherStatus"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/status_weather_idle" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_m" android:gravity="center_vertical" android:minHeight="@dimen/touch_target" android:orientation="horizontal">
+            <ProgressBar android:id="@+id/progressLoading" android:layout_width="@dimen/touch_target" android:layout_height="@dimen/touch_target" android:layout_marginEnd="@dimen/spacing_s" android:contentDescription="@string/cd_weather_progress" android:indeterminate="true" android:visibility="gone" />
+            <TextView android:id="@+id/tvWeatherStatus" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/status_weather_idle" />
         </LinearLayout>
-
-        <CheckBox
-            android:id="@+id/cbAutoRefresh"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:minHeight="@dimen/touch_target"
-            android:text="@string/cb_auto_refresh" />
-
-        <Button
-            android:id="@+id/btnRefresh"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_s"
-            android:minHeight="@dimen/touch_target"
-            android:text="@string/btn_refresh" />
+        <CheckBox android:id="@+id/cbAutoRefresh" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:minHeight="@dimen/touch_target" android:text="@string/cb_auto_refresh" />
+        <Button android:id="@+id/btnRefresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_s" android:minHeight="@dimen/touch_target" android:text="@string/btn_refresh" />
     </LinearLayout>
 </LinearLayout>
